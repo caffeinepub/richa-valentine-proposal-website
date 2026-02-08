@@ -1,0 +1,6 @@
+{
+  "frontend/src/App.tsx": "Main Valentine proposal component with three states (initial with \"Tumi ki amai valobaso?\" message, accepted with \"Sabbassss\" and \"Extra valobasa for you\" messages, declined with Bengali/Romanized Bengali copy including \"Chup chap bol\" YES\"\"\") featuring romantic animations, heart effects, and the ability to change answers.",
+  "frontend/src/index.css": "Global styles with warm romantic OKLCH color palette (rose, blush, cream tones), custom animations for floating hearts and card transitions, and Google Fonts integration for Playfair Display and Inter.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom font families (Playfair Display serif, Inter sans) and the romantic color system.",
+  "frontend/index.html": "HTML entry point with updated title and meta description for the Valentine proposal website."
+}

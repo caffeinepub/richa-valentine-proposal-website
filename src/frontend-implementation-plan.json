@@ -1,0 +1,23 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update declined-state spoiler line text",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "summary": "Change the declined-state italic spoiler line text in App.tsx to the exact requested copy without affecting any other UI, text, styling, layout, or behavior.",
+      "acceptanceCriteria": [
+        "When the user clicks the reject option and the declined state is shown, the italic line displays exactly `Chup chap bol\\\" YES\\\"\\\"`.",
+        "The original `(Spoiler alert: You're going to say yes eventually anyway!)` text no longer appears anywhere in the declined state.",
+        "No other declined-state elements (headline, other paragraphs, emoji, reset button) change."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Within the declined state render block only, replace the italic line text `(Spoiler alert: You're going to say yes eventually anyway!)` with exactly `Chup chap bol\\\" YES\\\"\\\"`. Do not change any other text, layout, styles, or behavior elsewhere in the file."
+        }
+      ]
+    }
+  ]
+}

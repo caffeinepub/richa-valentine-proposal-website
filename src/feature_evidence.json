@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-in-frontend-src-app-tsx-update-the-declined-state-italic-line-that-currently-reads-spoiler-alert-you-re-going-to-say-yes-eventually-anyway-to-exactly-chup-chap-bol-yes-apply-this-change-only-within-the-declined-state-ui-and-leave-all-other-text-layout-styles-and-behavior-unchanged",
+      "featureTitle": "In `frontend/src/App.tsx`, update the declined-state italic line that currently reads `(Spoiler alert: You're going to say yes eventually anyway!)` to exactly: `Chup chap bol\" YES\"\"`. Apply this change only within the declined state UI and leave all other text, layout, styles, and behavior unchanged.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

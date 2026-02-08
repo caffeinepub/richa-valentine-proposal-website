@@ -1,0 +1,23 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-08T19:13:42.728Z",
+  "summary": "REQ-9 targets a single text change in the declined state within frontend/src/App.tsx. The diff summary does not show the declined-state section (App.tsx is truncated), but the generated file summary claims the declined copy includes the new spoiler line. However, the change set also modifies two additional files outside App.tsx, which is out of scope per the BuildRequest constraints.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Modified files beyond the scoped target (changes not limited to frontend/src/App.tsx only).",
+      "reason": "BuildRequest constraint says to keep the change scoped to the declined state in frontend/src/App.tsx only; modifying other files was not requested.",
+      "evidence": [
+        "frontend-file-summaries.txt",
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.62,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/App.tsx",
+    "project_state.json"
+  ]
+}

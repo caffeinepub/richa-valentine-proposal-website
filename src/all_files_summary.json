@@ -1,0 +1,14 @@
+{
+  "backend/main.mo": "Empty Motoko actor placeholder with no implemented logic.",
+  "feature_evidence.json": "Feature evidence report describing a UI text change in the declined state of App.tsx.",
+  "frontend-file-summaries.txt": "Prewritten summaries of key frontend files including App.tsx, index.css, Tailwind config, and index.html.",
+  "frontend/index.css": "Tailwind base styles defining light/dark theme color variables and global background/foreground styles.",
+  "frontend/index.html": "Main HTML entry point loading the React app with title and meta description for the Valentine proposal.",
+  "frontend/src/App.tsx": "React component implementing the Valentine proposal flow with three states, themed UI, and interactive buttons.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and manages a DFINITY actor instance based on the user’s Internet Identity.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Comprehensive Internet Identity provider and hook handling authentication, identity restoration, and login state.",
+  "frontend/src/index.css": "Extended Tailwind styles with romantic color palette, custom animations, typography, and component utilities.",
+  "frontend/src/main.tsx": "App bootstrap mounting React with QueryClient and InternetIdentityProvider.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending colors, fonts, animations, and enabling plugins like typography and container queries.",
+  "project_state.json": "Defines the project’s current state, listing Valentine website requirements and features. Contains versioning info, existing features, and text-update instructions for the declined state UI."
+}

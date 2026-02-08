@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 11,
+  "summary": "Build a simple Valentine proposal website for Richa that lets her accept or reject the proposal.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-valentine-proposal-website-addressed-to-richa-with-a-clear-proposal-message-and-two-primary-actions-accept-and-not",
+      "title": "Create a single-page Valentine proposal website addressed to “Richa” with a clear proposal message and two primary actions: “Accept” and “Not”.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-interaction-states-so-that-clicking-accept-shows-a-dedicated-accepted-state-message-celebratory-visual-effect-and-clicking-not-shows-a-dedicated-declined-state-message-gentle-neutral-visual-include-a-way-to-return-to-the-initial-choice-state-e-g-change-my-answer",
+      "title": "Implement interaction states so that clicking “Accept” shows a dedicated accepted state (message + celebratory visual effect), and clicking “Not” shows a dedicated declined state (message + gentle/neutral visual). Include a way to return to the initial choice state (e.g., “Change my answer”).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-romantic-visual-theme-colors-typography-spacing-and-layout-consistently-across-the-page-avoid-a-default-template-look-do-not-use-a-blue-purple-theme",
+      "title": "Apply a coherent, romantic visual theme (colors, typography, spacing, and layout) consistently across the page (avoid a default/template look). Do not use a blue+purple theme.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-required-generated-static-images-to-the-frontend-and-render-them-on-the-page-served-from-frontend-public-assets-generated",
+      "title": "Add required generated static images to the frontend and render them on the page (served from frontend/public/assets/generated).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-initial-state-reject-button-label-from-not-to-exactly-yes-you-will",
+      "title": "Update the initial-state reject button label from “Not” to exactly: “Yes, you will”.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-declined-state-headline-and-or-body-copy-with-a-funny-playful-teasing-message-that-fits-the-valentine-tone-while-keeping-it-respectful-and-still-clearly-indicating-the-user-chose-the-reject-path",
+      "title": "Replace the declined-state headline and/or body copy with a funny, playful, teasing message that fits the Valentine tone, while keeping it respectful and still clearly indicating the user chose the reject path.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-declined-reject-state-copy-in-frontend-src-app-tsx-so-that-the-following-three-pieces-of-text-are-replaced-with-the-user-provided-strings-apply-these-changes-only-in-the-declined-state-ui-1-declined-headline-currently-nice-try-richa-set-to-exactly-kno-valo-vabe-accept-kora-jai-na-2-first-declined-paragraph-currently-but-we-both-know-you-didn-t-really-mean-that-set-to-exactly-ooo-achhha-erom-bpr-3-second-declined-paragraph-currently-begins-i-saw-that-smile-when-you-clicked-the-button-come-on-give-it-another-shot-the-accept-button-is-right-there-just-waiting-for-you-set-to-exactly-akhon-khil-khil-kore-hasssa-leave-all-other-declined-state-ui-elements-and-behavior-unchanged-including-the-reset-button-and-any-additional-lines-not-mentioned-above",
+      "title": "Update the **declined (reject) state** copy in `frontend/src/App.tsx` so that the following three pieces of text are replaced with the user-provided strings (apply these changes only in the declined state UI):\n\n1) Declined headline (currently: \"Nice try, Richa! 😄\") -> set to exactly: \"Kno Valo vabe  Accept kora jai na?\"\n\n2) First declined paragraph (currently: \"But we both know you didn't really mean that...\") -> set to exactly: \"OOO achhha erom bpr?\"\n\n3) Second declined paragraph (currently begins: \"I saw that smile when you clicked the button! Come on, give it another shot. The \\\"Accept\\\" button is right there, just waiting for you. 💕\") -> set to exactly: \" Akhon Khil khil kore hasssa?\"\n\nLeave all other declined-state UI elements and behavior unchanged (including the reset button and any additional lines not mentioned above).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-accepted-state-message-copy-in-frontend-src-app-tsx-by-replacing-the-following-two-lines-exactly-1-replace-you-ve-made-me-the-happiest-person-alive-with-sabbassss-2-replace-thank-you-for-saying-yes-richa-this-is-the-beginning-of-something-beautiful-with-extra-valobasa-for-you-apply-these-changes-only-in-the-accepted-state-ui-leave-all-other-text-layout-animations-and-behavior-unchanged",
+      "title": "Update the **accepted state** message copy in `frontend/src/App.tsx` by replacing the following two lines exactly:\n\n1) Replace \"You've made me the happiest person alive!\" with \"Sabbassss\"\n\n2) Replace \"Thank you for saying yes, Richa. This is the beginning of something beautiful.\" with \"Extra valobasa for you\"\n\nApply these changes only in the accepted-state UI; leave all other text, layout, animations, and behavior unchanged.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-frontend-src-app-tsx-update-the-declined-state-italic-line-that-currently-reads-spoiler-alert-you-re-going-to-say-yes-eventually-anyway-to-exactly-chup-chap-bol-yes-apply-this-change-only-within-the-declined-state-ui-and-leave-all-other-text-layout-styles-and-behavior-unchanged",
+      "title": "In `frontend/src/App.tsx`, update the declined-state italic line that currently reads `(Spoiler alert: You're going to say yes eventually anyway!)` to exactly: `Chup chap bol\" YES\"\"`. Apply this change only within the declined state UI and leave all other text, layout, styles, and behavior unchanged.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a Valentine proposal website for Richa with clear Accept and Not (Reject) choices",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Update the reject/No option to be humorous: change the “No/Not” button label to “Yes, you will” and update the declined-state message to something funny",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Update the declined (reject) state copy to the user-provided text replacements (3 lines)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Update the main initial proposal message text: replace “Every moment with you feels like a beautiful dream.\n\nYour smile lights up my world, and your laughter is my favorite melody.” with “Tumi ki amai valobaso?”",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Update accepted-state copy: change “You've made me the happiest person alive!” to “Sabbassss” and “Thank you for saying yes, Richa. This is the beginning of something beautiful.” to “Extra valobasa for you”",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Update the declined-state text “(Spoiler alert: You're going to say yes eventually anyway!)” to the user-provided replacement: \"Chup chap bol\" YES\"\"",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Richa Valentine Proposal Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

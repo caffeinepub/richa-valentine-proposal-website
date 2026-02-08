@@ -1,0 +1,39 @@
+{
+  "kind": "build_request",
+  "title": "Update declined-state spoiler line text",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "In `frontend/src/App.tsx`, update the declined-state italic line that currently reads `(Spoiler alert: You're going to say yes eventually anyway!)` to exactly: `Chup chap bol\" YES\"\"`. Apply this change only within the declined state UI and leave all other text, layout, styles, and behavior unchanged.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1",
+          "msg-2"
+        ],
+        "quotes": [
+          "change the \"(Spoiler alert: You're going to say yes eventually anyway!)\" to \"Chup chap bol\" YES\"\"\"",
+          "Declined state"
+        ]
+      },
+      "acceptanceCriteria": [
+        "When the user clicks the reject option and the declined state is shown, the italic line displays exactly `Chup chap bol\" YES\"\"`.",
+        "The original `(Spoiler alert: You're going to say yes eventually anyway!)` text no longer appears anywhere in the declined state.",
+        "No other declined-state elements (headline, other paragraphs, emoji, reset button) change."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend files listed as immutable must not be modified: `frontend/src/hooks/useInternetIdentity.ts`, `frontend/src/hooks/useInternetIdentity.tsx`, `frontend/src/hooks/useActor.ts`, `frontend/src/main.tsx`, `frontend/src/components/ui`.",
+    "Keep the change scoped to the declined state in `frontend/src/App.tsx` only."
+  ],
+  "nonGoals": [
+    "Do not change any other copy in the initial or accepted states.",
+    "Do not change styling, animations, button behavior, or assets."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
